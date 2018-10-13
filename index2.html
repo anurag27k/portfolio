@@ -7,9 +7,15 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
+  
+@font-face{
+  font-family: SansForgetica;
+  src: url('./fonts/SansForgetica-Regular.otf');
+}
+
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
 body, html {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: SansForgetica;
     height: 100%;
     color: #777;
     line-height: 1.8;
@@ -51,6 +57,13 @@ body, html {
         min-height: 400px;
     }
 }
+
+.w3-bar{
+  height: 80px;
+  padding: 20px;
+}
+
+
 </style>
 <body>
 
@@ -60,13 +73,10 @@ body, html {
     <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
       <i class="fa fa-bars"></i>
     </a>
-    <a href="#home" class="w3-bar-item w3-button">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
-      <i class="fa fa-search"></i>
-    </a>
+    <a href="#home" class="w3-bar-item w3-button">Home</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"> about</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"> PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"> CONTACT</a>
   </div>
 
   <!-- Navbar on small screens -->
@@ -74,7 +84,6 @@ body, html {
     <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
     <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
     <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
   </div>
 </div>
 
@@ -282,15 +291,15 @@ function onClick(element) {
 }
 
 // Change style of navbar on scroll
-window.onscroll = function() {myFunction()};
-function myFunction() {
-    var navbar = document.getElementById("myNavbar");
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
-    } else {
-        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
-    }
-}
+// window.onscroll = function() {myFunction()};
+// function myFunction() {
+//     var navbar = document.getElementById("myNavbar");
+//     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+//         navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+//     } else {
+//         navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+//     }
+// }
 
 // Used to toggle the menu on small screens when clicking on the menu button
 function toggleFunction() {
