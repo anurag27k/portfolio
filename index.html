@@ -6,6 +6,8 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Chakra+Petch|Muli" rel="stylesheet">
+<link rel="stylesheet" href="./css/timeline.css">
 <style>
   
 @font-face{
@@ -13,9 +15,12 @@
   src: url('./fonts/SansForgetica-Regular.otf');
 }
 
-body,h1,h2,h3,h4,h5,h6 {font-family: SansForgetica;}
+body,h1,h2,h3,h4,h5,h6 {
+  font-family: 'Chakra Petch', sans-serif;
+  font-weight: bold;}
 body, html {
-    font-family: "Lato", sans-serif;
+    font-family: 'Muli', sans-serif;
+    font-weight: 200;
     height: 100%;
     color: #777;
     line-height: 1.8;
@@ -31,7 +36,7 @@ body, html {
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-    background-image: url('./img/profile2.jpg');
+    background-image: url('./img/profile21.jpg');
     min-height: 100%;
 }
 
@@ -63,13 +68,23 @@ body, html {
   padding: 20px;
 }
 
+.title-heading{
+  font-size: 75pt;
+  font-weight:bold;
+  color: white;
+}
+
+.para-style{
+  margin: 0%;
+}
+
 
 </style>
 <body>
 
 <!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar" id="myNavbar">
+<!-- <div class="w3-top">
+  <div class="w3-bar w3-white" id="myNavbar">
     <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
       <i class="fa fa-bars"></i>
     </a>
@@ -77,30 +92,69 @@ body, html {
     <a href="#about" class="w3-bar-item w3-button w3-hide-small"> About</a>
     <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"> Portfolio</a>
     <a href="#contact" class="w3-bar-item w3-button w3-hide-small"> Contact</a>
-  </div>
+  </div> -->
 
   <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+  <!-- <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
     <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">About</a>
     <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">Portfolio</a>
     <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">Contact</a>
   </div>
-</div>
+</div> -->
 
 <!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
-  <div class="w3-display-middle" style="white-space:nowrap;">
-    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">ANURAG <span class="w3-hide-small">WEBSITE</span> LOGO</span>
+  <div class="w3-display-left" style="white-space:nowrap;">
+    <p class="title-heading" style="font-family: 'Chakra Petch', sans-serif;">
+      Hello,
+      <span class="w3-hide-small">I'm Anurag</span> 
+    </p>
   </div>
 </div>
 
 <!-- Container (About Section) -->
 <div class="w3-content w3-container w3-padding-64" id="about">
-  <h3 class="w3-center">ABOUT ANURAG</h3>
-  <p class="w3-center"><em>I love photography</em></p>
-  <p>We have created a fictional "personal" website/blog, and our fictional character is a hobby photographer. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-    qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <h3 >ABOUT ME</h3>
+  <p class="para-style">My name is <b>Anurag Kumar Singh</b></p>
+  <p class="para-style">I am designer based out of Bangalore, India. I currently specialize in UI deisgn</p>
+
+
+  <ul class="timeline">
+      <li class="timeline-event">
+        <label class="timeline-event-icon"></label>
+        <div class="timeline-event-copy">
+          <p class="timeline-event-thumbnail">April 2011 - heute</p>
+          <h3>Geil,Danke! GmbH</h3>
+          <h4>Geschäftsführerin eines Web-Studios</h4>
+          <p><strong>Schwerpunkt: Frontend-Entwicklung</strong><br>Entwickeln von anspruchsvollen, animierten, responsive und adaptive Webseiten mit HTML5, SCSS, jQuery; für alle Browser, optimiert für Desktop, Notebook, Smartphones und Tablets (iOS, Android, Windows).</p>
+          <p><strong>Projektmanagement mit Scrum</strong><br>Ständiges Verbessern des agilen Entwicklungsprozesses beispielsweise durch Grunt, Yeoman, GIT, JIRA und BrowserStack.</p>
+        </div>
+      </li>
+      <li class="timeline-event">
+        <label class="timeline-event-icon"></label>
+        <div class="timeline-event-copy">
+          <p class="timeline-event-thumbnail">November 2009 - März 2011</p>
+          <h3>Freelancer</h3>
+          <h4>Designer und Autor</h4>
+          <p>Konzeption, Design und Produktion von Digitalen Magazinen mit InDesign, der Adobe Digital Publishing Suite und HTML5. Co-Autorin der Fachbücher "Digitales Publizieren für Tablets" und "Adobe Digital Publishing Suite" erschienen im dpunkt.verlag.</p>
+        </div>
+      </li>
+      <li class="timeline-event">
+        <label class="timeline-event-icon"></label>
+        <div class="timeline-event-copy">
+          <p class="timeline-event-thumbnail">April 2011 - heute</p>
+          <h3>konplan gmbh</h3>
+          <h4>IT-Consultant</h4>
+          <p><strong>Systemarchitektur, Consulting</strong><br>Konzeption und Modellierung von Systemen und APIs für Digital Publishing und Entitlement nach SOA</p>
+        </div>
+      </li>
+    </ul>  
+
+
+
+
+
+
   <div class="w3-row">
     <div class="w3-col m6 w3-center w3-padding-large">
       <p><b><i class="fa fa-user w3-margin-right"></i>My Name</b></p><br>
@@ -291,16 +345,15 @@ function onClick(element) {
 }
 
 // Change style of navbar on scroll
-window.onscroll = function() {myFunction()};
-function myFunction() {
-    var navbar = document.getElementById("myNavbar");
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "w3-bar" + " w3-animate-top" + " w3-white";
-        // navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
-    } else {
-        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
-    }
-}
+// window.onscroll = function() {myFunction()};
+// function myFunction() {
+//     var navbar = document.getElementById("myNavbar");
+//     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+//         navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+//     } else {
+//         navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+//     }
+// }
 
 // Used to toggle the menu on small screens when clicking on the menu button
 function toggleFunction() {
