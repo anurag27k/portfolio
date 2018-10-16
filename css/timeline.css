@@ -50,6 +50,8 @@ body {
   -moz-box-shadow: inset 40em 0 0 0 #ffda44;
   -webkit-box-shadow: inset 40em 0 0 0 #ffda44;
   box-shadow: inset 40em 0 0 0 #ffda44;
+  color: black;
+  font-weight: 700;
 }
 
 .timeline-event-copy {
