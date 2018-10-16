@@ -1,7 +1,7 @@
 .card {
     opacity: 0.8;
     box-shadow: 4px 4px 0 rgba(0,0,0,1);
-    transition: 0.3s;
+    transition: 0.2s;
     float: left;
     margin: 10px;
     border:2px solid black;
@@ -9,7 +9,7 @@
 }
 
 .card:hover {
-    box-shadow: 10px 10px 0 rgba(0,0,0,1);
+    box-shadow: 8px 8px 0 rgba(0,0,0,1);
     opacity: 1;
 }
 
