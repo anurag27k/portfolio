@@ -79,29 +79,35 @@ body, html {
   margin: 0%;
 }
 
+a{
+  text-decoration: none;
+}
+
 
 </style>
 <body>
 
 <!-- Navbar (sit on top) -->
-<!-- <div class="w3-top">
-  <div class="w3-bar w3-white" id="myNavbar">
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
     <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
       <i class="fa fa-bars"></i>
     </a>
-    <a href="#home" class="w3-bar-item w3-button">Home</a>
-    <a href="#about" class="w3-bar-item w3-button w3-hide-small"> About</a>
-    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"> Portfolio</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"> Contact</a>
-  </div> -->
+    <a href="#home"><img src="./img/Asset.png" style="width:30px"></a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-right"><b> Contact</b></a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small w3-right"><b> Portfolio</b></a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small w3-right"><b> Timeline</b></a>
+    <a href="#home" class="w3-bar-item w3-button w3-hide-small w3-right"><b> About</b></a>
+    
+  </div>
 
   <!-- Navbar on small screens -->
-  <!-- <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
     <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">About</a>
     <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">Portfolio</a>
     <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">Contact</a>
   </div>
-</div> -->
+</div>
 
 <!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
@@ -325,17 +331,15 @@ body, html {
 </div>
 
 <!-- Footer -->
-<footer class="w3-black w3-padding-64" style="padding-right:50px;text-align:right;">
-  <a href="#home" class="w3-button w3-light-grey" style="border-radius:50px;"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-  <div class="w3-xlarge w3-section">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
+<footer class="w3-black w3-padding-small" style="padding-right:50px;text-align: center">
+    <h3 class="w3-opacity">Find me on</h3>
+  <div class="w3-xlarge w3-section w3-center">
+    <a href="" class="w3-hover-opacity"><img src="./img/behance.png">&nbsp;Behance &nbsp;&nbsp;</a>
+    <a href="" class="w3-hover-opacity"><i class="fa fa-twitter"></i>&nbsp;Twitter &nbsp;&nbsp;</a>
+    <a href="" class="w3-hover-opacity"><i class="fa fa-linkedin"></i>&nbsp; LinkedIn &nbsp;&nbsp;</a>
   </div>
-  <span style="padding-right:10px;">Made with &hearts; by me </span> &copy; 2018
+  
+  <span style="padding-right:10px;" class="w3-center">Made with &hearts; by me </span> &copy; 2018
 </footer>
  
 <!-- Add Google Maps -->
